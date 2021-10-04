@@ -1,4 +1,4 @@
-# μjik
+# μjik - A Discord Music Bot
 
 A discord for all your music needs!
 ## Features supported:
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 ### Setting up:
 ```python 
-ETA Soon
+Source Code will be uploaded soon
 ```
 ## Usage
 - Play a Song
