@@ -9,7 +9,7 @@ A discord for all your music needs!
 
 ## Get the bot in your server 
 - Requires Approval after Joining 
-- Invite to your server - [Invitation](https://discord.com/api/oauth2/authorize?client_id=827981586339332146&permissions=8&scope=bot) 
+- Invite to your server - [Invitation](https://discord.com/api/oauth2/authorize?client_id=888693797448478770&permissions=8&scope=bot) 
 
 ### Installation
 
