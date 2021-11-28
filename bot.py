@@ -136,7 +136,8 @@ async def play_music(ctx,song_link=None):
 
 @bot.command(name='p', help='To play song')
 async def play(ctx,*url):
-    if ctx.guild.name in VERIFIED_SERVERS:
+    wow = True
+    if wow:
         searchString = " ".join(url)
         print(f"Searching: {searchString}")
         
@@ -321,15 +322,6 @@ async def servers(ctx):
         print("Else")
 
 if __name__ == "__main__" :
-    print("Starting Services")
-    print("Getting Verified Servers")
-    gc = gspread.service_account(filename='creds.json')
-    sh = gc.open_by_key("1i5XWOQ7k26iSr3kDiwxnwe0TQ3kJPjqDaCy-wTyDnt8")
-    worksheet = sh.sheet1
-    NAME_COL = 1
-    name_list = worksheet.col_values(NAME_COL)[1:]
-    print("Verified Servers:",name_list)
-    VERIFIED_SERVERS = [i for i in name_list]
     print("Stored Verified Servers:", VERIFIED_SERVERS)
     print("Starting Bot")
     bot.run(BOT_TOKEN)
