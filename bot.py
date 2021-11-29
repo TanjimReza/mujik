@@ -11,7 +11,7 @@ from gspread.utils import accepted_kwargs
 from MaxEmbeds import EmbedBuilder
 global VERIFIED_SERVERS
 VERIFIED_SERVERS = []
-BOT_TOKEN = "ODg4NjkzNzk3NDQ4NDc4Nzcw.YUWamA.uQAnHaxkLOxHMHJRC6AV31hC9s4"
+BOT_TOKEN = "YOUR BOT TOKEN HERE"
 queue = {}
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix='!',intents=intents)
@@ -205,11 +205,6 @@ async def pause(ctx):
  
 @bot.command(name='resume', help='Resumes the song')
 async def resume(ctx):
-    # if voice.is_playing() == False:
-    #     voice.resume()
-    #     await ctx.message.reply(f"Resumed ▶️")
-    # else: 
-    #     await ctx.message.reply(f"Nothing is paused!")
     try: 
         if ctx.message.guild.voice_client is not None:
             print("Currently Connected!")
@@ -229,12 +224,6 @@ async def resume(ctx):
 
 @bot.command(name='leave', help='To make the bot leave the voice channel')
 async def leave(ctx):
-    # try:
-    #     global voice
-    #     await voice.disconnect()
-    #     await ctx.message.reply("Left voice channel 🥺. Ping me if you want me to play a song.")
-    # except: 
-    #     pass
     if ctx.voice_client is not None: 
         await ctx.voice_client.disconnect()
         print(f"Disconnected from {ctx.guild.name}")
