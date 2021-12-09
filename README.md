@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 ### Setting up:
 ```python 
-Source Code will be uploaded soon
+Use your bot token, run the code. 
 ```
 ## Usage
 - Play a Song
